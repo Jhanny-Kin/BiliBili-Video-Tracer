@@ -6,7 +6,7 @@ import re
 import time
 import datetime
 
-# change your target video url in BiliBili below
+# change your target video url from BiliBili below
 url = "https://www.bilibili.com/video/BV1fY4y1F7GL?spm_id_from=333.999.0.0&vd_source=bb34772c9c0cfb635943b6692a649ba0"
 headers = {
 	# change the agency if you want, it seems to be unnecessary when this script is created

@@ -3,7 +3,7 @@
 # default mode: automatically run every minute, and script must be on all the time
 # cron mode: comment @repeater(line 74), and then run it in crontab on one minute basis
 # the output file has a format as below:
-# Year-Month-Day Hour:Minute:Second >>> [view, dm, like, coin, collect, share]
+# Year-Month-Day Hour:Minute:Second >>> view dm like coin collect share
 
 import requests
 from bs4 import BeautifulSoup
@@ -37,11 +37,11 @@ def analyze(full):
         data.append(convert(element))
 
     extra = str(full.find_all('span'))
-    like = re.findall(r'点赞数(\d+)', extra)[0]
-    dm = re.findall(r'历史累计弹幕数(\d+)', extra)[0]
-    view = re.findall(r'总播放数(\d+)', extra)[0]
+    like = str(re.findall(r'点赞数(\d+)', extra)[0])
+    dm = str(re.findall(r'历史累计弹幕数(\d+)', extra)[0])
+    view = str(re.findall(r'总播放数(\d+)', extra)[0])
 
-    result = [int(view), int(dm), int(like)] + data[1:]
+    result = f'{view} {dm} {like} {data[1]} {data[2]} {data[3]}'
     return result
 
 
@@ -51,7 +51,7 @@ def convert(number):
         new_num = int(float(number.strip('万')) * 10000)
     else:
         new_num = number
-    return int(new_num)
+    return str(new_num)
 
 
 def write(output):
@@ -71,7 +71,7 @@ def repeater(func):
 
 
 # comment this single line if you need
-@repeater
+# @repeater
 def process():
     content = request(link)
     if content is False:

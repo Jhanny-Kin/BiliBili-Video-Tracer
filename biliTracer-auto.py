@@ -66,7 +66,7 @@ def repeater(func):
             start = time.time()
             func()
             end = time.time()
-            time.sleep(60-(end-start))
+            time.sleep(75-(end-start))
     return wrapper
 
 

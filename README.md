@@ -1,4 +1,4 @@
-# BIliBIli-video-tracer
+# BiliBili-Video-Tracer
 
 Run [ pip install bs4 requests ] in terminal for module dependency
 

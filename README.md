@@ -2,7 +2,7 @@
 
 Run [ pip install bs4 requests ] in terminal for module dependency
 
-Overview: This short script help you gather six statistics about a video posted on BiliBili, specifically the numbers of views, bullet comments, likes, coins, collects, and shares. Please look at the scripts before running them for more instructions.
+Overview: This short script help you gather six types of statistics about a video posted on BiliBili, specifically the numbers of views, bullet comments, likes, coins, collects, and shares. Please look at the scripts before running them for more instructions.
 
 Auto version: You can use it for either tracing a video in crontab or running at the backend of you computer, and all information will be stored in an addition text file in the same folder of the script.
 

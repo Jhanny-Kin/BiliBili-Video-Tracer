@@ -71,7 +71,7 @@ def repeater(func):
 
 
 # comment this single line if you need
-# @repeater
+@repeater
 def process():
     content = request(link)
     if content is False:

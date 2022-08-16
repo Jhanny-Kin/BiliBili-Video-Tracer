@@ -8,6 +8,6 @@ Auto version: You can use it for either tracing a video in crontab or running at
 
 Manual version: The script only pulls the video information once, but it includes a simple interface and some extra info as well. Nothing is going to be stored, so it's just for test before you use the auto version.
 
-Trend: A very simple scripte to see the amount of increase per unit time, and store the trend info in trend.txt.
+Trend: A very simple script to see the amount of increase per unit time, and store the trend data in trend.txt.
 
 Note: The minimum time between two runs of the script is 75s as BiliBili refrash the data in this frequency. 

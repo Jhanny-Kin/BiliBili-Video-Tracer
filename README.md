@@ -2,8 +2,10 @@
 
 Run [ pip install bs4 requests ] in terminal for module dependency
 
-Auto version: you can use it for either tracing a video in crontab or running at the backend of you computer, and all information will be stored in an addition text file in the same folder of the script.
+Overview: This short script help you gather six statistics about a video posted on BiliBili, specifically the numbers of views, bullet comments, likes, coins, collects, and shares. Please look at the scripts before running them for more instructions.
 
-Manual version: the script only pulls the video information once, but it includes a simple interface and some extra info as well. Nothing is going to be stored, so it's just for test before you use the auto version.
+Auto version: You can use it for either tracing a video in crontab or running at the backend of you computer, and all information will be stored in an addition text file in the same folder of the script.
+
+Manual version: The script only pulls the video information once, but it includes a simple interface and some extra info as well. Nothing is going to be stored, so it's just for test before you use the auto version.
 
 Note: The minimum time between two runs of the script is one minute as BiliBili refrash the data every minute. 

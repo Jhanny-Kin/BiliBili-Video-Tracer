@@ -1,7 +1,10 @@
 #!/bin/python3
 
-# default mode: automatically run every minute, and script must be on all the time
-# cron mode: comment @repeater(line 74), and then run it in crontab on one minute basis
+# default mode: automatically run every 75s, and script must be on all the time
+# cron mode: comment @repeater(line 77), and then run it in crontab on 5min basis (suggested)
+#            If you want to run it every 75s in crontab, my suggestion is to write a shell code
+#            that run this script 4 times every five minutes in cron, the shell script should be
+#            same idea of the repeater I wrote here.
 # the output file has a format as below:
 # Year-Month-Day Hour:Minute:Second >>> view dm like coin collect share
 

@@ -1,7 +1,7 @@
 #!/bin/python3
 
-# Because this is a manual version, there is no exception protection.
-# If nothing goes wrong here, it works for sure in the auto version.
+# There is no exception protection since it is only a manual(demo) version.
+# If nothing goes wrong here, it will work for sure in the automated version.
 
 import requests
 from bs4 import BeautifulSoup
@@ -71,11 +71,11 @@ def printing(output):
 
 
 @decorator
-def process():
+def main():
     content = request(link)
     info = analyze(content)
     printing(info)
 
 
 if __name__ == '__main__':
-    process()
+    main()

@@ -75,7 +75,7 @@ def repeater(func):
 
 # comment this single line if you need
 @repeater
-def process():
+def main():
     content = request(link)
     if content is False:
         write('video no longer exist in BiliBili')
@@ -90,4 +90,4 @@ def process():
 
 
 if __name__ == '__main__':
-    process()
+    main()

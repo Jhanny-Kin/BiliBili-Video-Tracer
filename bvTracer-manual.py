@@ -29,11 +29,10 @@ def analyze(full):
         data.append(convert(element))
 
     extra = str(full.find_all('span'))
-    like = str(re.findall(r'点赞数(\d+)', extra)[0])
     dm = str(re.findall(r'历史累计弹幕数(\d+)', extra)[0])
     view = str(re.findall(r'总播放数(\d+)', extra)[0])
 
-    result = [title, view, dm, like] + data[1:]
+    result = [title, view, dm, like] + data
     return result
 
 
